@@ -3,7 +3,7 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - main  # Or whatever branch you want to trigger the deployment
+      - master  # Or whatever branch you want to trigger the deployment
 
 jobs:
   build:

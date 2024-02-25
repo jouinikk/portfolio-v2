@@ -2617,4 +2617,17 @@ footer .copyright span:last-child::after {
 	color: transparent;
 }
 
+.red-icon:hover{
+	color: red;
+}
+.blue-icon:hover{
+	color:blue;
+}
+.black-icon:hover{
+	color: #000;
+}
+.green-icon:hover{
+	color:green;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -9,8 +9,8 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Serve static files (if needed)
-app.use(express.static('public'));
+// Serve the static portfolio from the repository root.
+app.use(express.static(__dirname));
 
 // POST route for form submission
 app.post('/send-email', (req, res) => {

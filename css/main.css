@@ -2617,6 +2617,94 @@ footer .copyright span:last-child::after {
 	color: transparent;
 }
 
+/* Selected work */
+.projects-section {
+	background: #f3f1eb;
+	color: #1b1b1b;
+	padding-bottom: 12rem;
+}
+.projects-section .section-intro {
+	padding-top: 10rem;
+	margin-bottom: 5rem;
+}
+.projects-section h5,
+.projects-section h1 {
+	color: #1b1b1b;
+}
+.projects-section .lead {
+	max-width: 54rem;
+	margin: 2.4rem auto 0;
+	color: #5d5d5d;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2.4rem;
+}
+.project-card {
+	background: #ffffff;
+	border-top: 4px solid #fffb00;
+	padding: 3.6rem;
+	min-height: 28rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 1.8rem 4rem rgba(27, 27, 27, 0.08);
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-card:hover {
+	transform: translateY(-0.6rem);
+	box-shadow: 0 2.4rem 5rem rgba(27, 27, 27, 0.13);
+}
+.project-number {
+	color: #777;
+	font-size: 1.1rem;
+	letter-spacing: 0.12em;
+	margin-bottom: 3rem;
+}
+.project-card h2 {
+	color: #1b1b1b;
+	font-size: 2.8rem;
+	margin-bottom: 1.4rem;
+}
+.project-card p {
+	color: #5d5d5d;
+	margin-bottom: 2.4rem;
+}
+.project-link {
+	color: #1b1b1b;
+	font-family: "poppins-bold", sans-serif;
+	margin-top: auto;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 1.1rem;
+}
+.project-link span {
+	color: #c8c500;
+	font-size: 1.8rem;
+	margin-left: 0.6rem;
+	transition: margin-left 0.2s ease;
+}
+.project-link:hover span {
+	margin-left: 1rem;
+}
+.timeline-current .timeline-ico {
+	background: #fffb00;
+	color: #1b1b1b;
+}
+
+@media only screen and (max-width: 700px) {
+	.projects-section .section-intro {
+		padding-top: 7rem;
+	}
+	.projects-grid {
+		grid-template-columns: 1fr;
+	}
+	.project-card {
+		min-height: 24rem;
+		padding: 2.8rem;
+	}
+}
+
 .red-icon:hover{
 	color: red;
 }
